@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+}
+
+:root {
+    --text: #242424;
+    --text2: #454545;
+    --border: lightgrey;
+}
+
+body {
+    background: rgb(235, 235, 235);
+}
+
+section {
+    display: grid;
+    place-content: center;
+}
+
+.container {
+    padding: 1rem;
+}
+
+
+/* Search */
+nav {
+    margin: 0.25rem 1rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    height: 24px;
+    display: inline-block;
+}
+
+li a {
+    vertical-align: middle;
+    font-weight: 600;
+    color: var(--text);
+    text-decoration: none;
+}
+
+li a:hover {
+    color: var(--text);
+}
+
+a img {
+    height: 24px;
+}
+
+.card {
+    box-shadow: 0px 0px 40px rgb(105, 105, 105);
+    border-radius: 6px;
+    background: white;
+}
+
+.search {
+    padding: 1rem 0;
+}
+
+form input {
+    font-size: 1rem;
+    color: var(--text);
+    border-radius: 0;
+    padding: 0.15rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--border);
+}
+
+@media (max-width: 400px) {
+    form input {
+        max-width: 100px;
+    }
+}
+@media (max-width: 350px) {
+    form input {
+        max-width: 80px;
+    }
+}
+
+form button {
+    border-radius: none;
+    color: transparent;
+    user-select: none;
+    cursor: pointer;
+    padding: 0.15rem 0;
+    border-radius: 0;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    background-image: url('img/search.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#output {
+    padding: 0;
+}
+
+#output p {
+    color: var(--text2);
+    font-weight: 400;
+}
+
+#output span {
+    font-weight: 600;
+}
+
+#output img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+}
+/* Search */
+
+
+/* Sources */
+.sources a {
+    color: var(--text2);
+}
+/* Sources */
