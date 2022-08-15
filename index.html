@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>MovieBoard</title>
+</head>
+<body>
+
+    <!-- Movies -->
+    <section>
+        <div class="container">
+            <!-- Card -->
+            <div class="card">
+                <div class="search">
+                    <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+                    <form autocomplete="off" target="dummyframe">
+                        <input type="text" name="s" id="s" placeholder="Movie or Show" required>
+                        <input type="text" name="y" id="y" placeholder="Year (Optional)"><button onclick="search()">Search</button>
+                    </form>
+                </div>
+    
+                <div id="output">
+                        
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sources -->
+    <section class="sources">
+        <div class="container">
+            <a href="https://www.omdbapi.com/" target="_blank">Movies and shows from OMDd's Api</a>
+            <a href="https://github.com/gavineby/movie-board" target="_blank">Github for project's code</a>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+}
+
+:root {
+    --text: #242424;
+    --text2: #454545;
+    --border: lightgrey;
+}
+
+body {
+    background: rgb(235, 235, 235);
+}
+
+section {
+    display: grid;
+    place-content: center;
+}
+
+.container {
+    padding: 1rem;
+}
+
+
+/* Search */
+.card {
+    box-shadow: 0px 0px 40px rgb(105, 105, 105);
+    border-radius: 6px;
+    max-width: 500px;
+    background: white;
+}
+
+.search {
+    padding: 1rem;
+}
+
+form input {
+    width: 100%;
+    display: block;
+    font-size: 1rem;
+    color: var(--text);
+    border-radius: 0;
+    padding: 0.5rem 0;
+    margin-bottom: 0.5rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--border);
+}
+
+form button {
+    border-radius: 3px;
+    padding: 0.35rem;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+form button:hover {
+    transform: scale(1.025);
+}
+
+/* Output */
+#output p {
+    color: var(--text2);
+    font-weight: 400;
+}
+
+#output span {
+    font-weight: 800;
+}
+
+#output img {
+    font-weight: 800;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+}
+
+/* Sources */
+.sources a {
+    display: block;
+    text-align: center;
+    color: var(--text2);
+}
